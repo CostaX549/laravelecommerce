@@ -4,8 +4,8 @@
     <ul class="navmenu">
         <li><a href="/">home</a></li>
         <li><a href="/collections" >categorias</a></li>
-        <li><a href="/wishlist" wire:navigate>lista de desejos</a></li>
-        <li><a href="/cart" wire:navigate>carrinho</a></li>
+        <li><a href="/wishlist">lista de desejos</a></li>
+        <li><a href="/cart">carrinho</a></li>
       
         @auth
         <li>  
