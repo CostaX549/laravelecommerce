@@ -21,8 +21,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Scripts -->
-  
-   <link rel="stylesheet" href="{{ asset ('assets/css/custom.css') }}">
+<link rel="stylesheet" href="https://laravelecommerce-production.up.railway.app/assets/css/custom.css">
   <!-- Exzoom -->
 
 

@@ -72,13 +72,9 @@
    <div class="products">
     @foreach($products as $productItem)
       <div class="row">
-  
         <a href="{{ url('/collections/'.$productItem->category->slug.'/'.$productItem->slug) }}">   
-          @if(isset($productItem->productImages[0]))
           <img src="{{ asset($productItem->productImages[0]->image) }}" alt="">
-          @endif
         </a>
-    
           <div class="product-text">
             @if($productItem->quantity > 0)
               <h5>Em estoque</h5>
