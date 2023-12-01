@@ -15,7 +15,12 @@
   @forelse($products as $product)
 
   <div class="cart-item">
-      <img src="{{ $product->productImages[0]->image }}" alt="{{ $product->name }}">
+    
+    @if(isset($product->productImages[0]))
+    <img src="{{ $product->productImages[0]->image }}" alt="{{ $product->name }}">
+@else
+    <p>Nenhuma imagem disponível</p>
+@endif
       <div class="product-info">
           <a href="{{ url('/collections/'.$product->category->slug.'/'.$product->slug)}}">
               <div class="product-name">{{ $product->name }}</div>
