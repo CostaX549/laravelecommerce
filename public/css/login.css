@@ -1,0 +1,196 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/fundodourado.jpg);
+    background-size: cover; /* Garante que a imagem cubra todo o elemento */
+ 
+    background-position: center bottom; /* Alinha a imagem na parte inferior do elemento */
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    -webkit-user-select: none; /* Para navegadores WebKit (Safari, Chrome) */
+    -moz-user-select: none; /* Para navegadores Firefox */
+}
+
+body::before {
+    content: '';
+  background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.register-link p {
+    color: #FFF;
+}
+.register-link a {
+    text-decoration: none;
+    color: #007bff; /* Cor do link (pode ser personalizada) */
+}
+
+.logo img {
+    height: 45px;
+    width: 167px;
+    object-fit: cover;
+}
+
+.header {
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.login_body {
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 650px;
+    margin-left: 50%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+
+.login_body h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 0;
+}
+
+.login_body input {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.login_body input:hover {
+    background-color: #444;
+}
+
+.input_box {
+    margin-bottom: 25px;
+}
+
+.login_body button {
+    height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(190,153,58);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.login_body button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .login_body {
+        padding: 50px;
+        height: auto;
+        width: 80%;
+    }
+}
+
+.support {
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.support input {
+    width: 15px;
+    height: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember span {
+    margin-right: 5px;
+    height: 25px;
+}
+
+.help a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+.login_facebook {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #737373;
+}
+
+.login_facebook span {
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.login_facebook span a {
+    text-decoration: none;
+    color: #737373;
+}
+
+.sign_up {
+    color: #737373;
+    font-size: 16px;
+}
+
+.sign_up a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sign_up a:hover {
+    text-decoration: underline;
+}
+
+.terms {
+    color: #737373;
+    font-size: 13px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #0071eb;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
