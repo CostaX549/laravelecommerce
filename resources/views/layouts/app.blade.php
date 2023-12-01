@@ -11,6 +11,9 @@
     <meta name="description" content="@yield('meta_description')">
     <meta name="keyword" content="@yield('meta_keyword')">
     <meta name="author" content="Spotlight+">
+
+    <!-- icon -->
+    <link rel="icon" href="/image/spotlighticon.png" type="image/png">
     
 
     <!-- Fonts -->
