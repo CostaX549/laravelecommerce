@@ -55,8 +55,8 @@ public function validationForAll() {
         return [
             'fullname' => 'required|string|max:121',
             'email' => 'required|email|max:121',
-            'phone' => 'required|string|max:11|min:10',
-            'pincode' => 'required|string|max:6|min:6',
+            'phone' => 'required|string',
+            'pincode' => 'required|string',
             'address' => 'required|string|max:500',
         ];
     }
